@@ -2,35 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Almaz" />
-    <meta name="description" content="Это сайт - резюме Алмаза" />
+    <meta name="keywords" content="almaz, resume" />
+    <meta name="description" content="Это сайт - резюме Алмаза Давлеткужина" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Almaz Resume</title>
   </head>
   <body>
-    
-    <img src="avatar.jpg" alt="Алмаз" width="200">
-    
-    <h1>Алмаз</h1>
-    
-    <p>Я пишу код <strong>страницы сайта</strong> резюме в рамках обучения в <strong>Result School</strong></p>
-    <p>Я люблю <em>путешествовать, заниматься спортом и программировать.</em></p>
+    <div class="container">
+      <div class="info">
+        <img src="avatar.jpg" alt="Алмаз Давлеткужин" class="avatar" />
 
-    <h4>Список социальных сетей</h4>
+        <div class="info-text">
+          <h1>Алмаз Давлеткужин</h1>
 
-    <a href="http://www.instagram.com/almaz/" target="_blank">Instagram</a>
+          <p>
+            Я учусь <strong>на курсе бесплатной части</strong> в онлайн школе
+            <strong>Result School</strong>
+          </p>
 
-    <a href="http://t.me/almaz" target="_blank">Telegram</a>
+          <p>
+            Я люблю
+            <em>путешествовать, заниматься спортом и программировать</em>
+          </p>
 
-    <a href="http://www.youtube.com/almaz" target="_blank">Youtube</a>
+          <h4>Список социальных сетей:</h4>
 
-    <h2>Мои хобби</h2>
+          <a href="https://www.instagram.com/almaz/" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://t.me/almaz" target="_blank">Telegram</a>
+          |
+          <a href="https://www.youtube.com/almaz" target="_blank">Youtube</a>
+        </div>
+      </div>
 
-    <ol>
-      <li>Путешествия</li>
-      <li>Музыка</li>
-      <li>Программирование</li>
-      <li>Спорт</li>
-    </ol>
+      <div class="card bg-green">
+        <h2>Мои хобби</h2>
+
+        <ol class="list">
+          <li>Путешествия</li>
+          <li>Футбол</li>
+          <li>Горные лыжи</li>
+          <li>Бег</li>
+        </ol>
+      </div>
+
+      <div class="card bg-red">
+        <h2>Опыт работы</h2>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Должность</th>
+              <th>Год</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Freelance</td>
+              <td>Junior Frontend</td>
+              <td>2015-2016</td>
+            </tr>
+            <tr>
+              <td>Freelance</td>
+              <td>Junior Frontend</td>
+              <td>2016-2017</td>
+            </tr>
+            <tr>
+              <td>Freelance</td>
+              <td>Junior Frontend</td>
+              <td>2017-2019</td>
+            </tr>
+            <tr>
+              <td>Freelance</td>
+              <td>Junior Frontend</td>
+              <td>2019 - сейчас</td>
+            </tr>
+            <tr>
+              <td>Freelance</td>
+              <td>Junior Frontend</td>
+              <td>2021 - сейчас</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>Мои курсы</h2>
+
+        <ul class="link-list">
+          <li>
+            <a href="https://almaz.ru/junior">UI/UX Дизайн - ITlogia</a>
+          </li>
+          <li>
+            <a href="https://almaz.ru/junior"
+              >Основы работы с Git и GitHub - Merion Academy</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <form action="/" class="form">
+        <h2>Связаться со мной</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Ваше сообщение:</label>
+          <textarea
+            id="message"
+            cols="20"
+            rows="5"
+            placeholder="Введите сообщение..."
+          ></textarea>
+        </div>
+
+        <input class="btn" type="submit" value="Отправить!" />
+      </form>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </div>
   </body>
 </html>
